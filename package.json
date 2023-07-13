@@ -1,0 +1,30 @@
+{
+  "name": "first_express_course",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo\" Error: no test specified\" && exit 1",
+    "main": "nodemon index.js",
+    "crud": "nodemon crud.js",
+    "app": "nodemon src/app.js",
+    "student": "nodemon student.js",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Robbert",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "description": ""
+}
