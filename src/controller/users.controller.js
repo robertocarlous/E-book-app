@@ -77,7 +77,7 @@ const sendResetPassword = async (req, res)=>{
     });
     const user = await usersModel.findOne({email:data.email});
     if(!user) return res.status(400).json({message:"user does not exist"});
-    //const code = ****
+    const code = 2233
     user.resetPasswordToken = code;
     await user.save();
     return res.status(200).json({

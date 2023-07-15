@@ -3,7 +3,7 @@ const { importBookToDB } = require("../script/book.script");
 require("dotenv").config();
 
 
-const uri = "mongodb+srv://pabati4933:9a3ch0pBLY0vGTcR@cluster0.ieqw1yz.mongodb.net/user"
+const uri = process.env.urimongodb
 async function connectDB() {
   await mongoose.connect(uri, {
     useNewUrlParser: true,

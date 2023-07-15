@@ -4,15 +4,15 @@ function generateToken(user) {
         {
             id:user._id.toString(),
         },
-        "$2b$10$jtBc4rQREcRUAt7ALa3lL.RlBz6PKZ030N/QPDg1z/KffpKZm1JC6",
+        process.env.authtoken,
         {    
-            expiresIn:"2h",
+         expiresIn: process.env.expirycode,
         }
     )
     return token;
 }
 function verifyToken(token) {
-    const payload = jwt.verify(token, "$2b$10$jtBc4rQREcRUAt7ALa3lL.RlBz6PKZ030N/QPDg1z/KffpKZm1JC6")
+    const payload = jwt.verify(token, process.env.authtoken)
     return payload;
 }
 

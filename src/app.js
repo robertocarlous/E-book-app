@@ -1,5 +1,7 @@
 const appRouter = require('./router/index')
 const express = require('express')
+const dotenv = require("dotenv")
+dotenv.config({path:".env"})
 const connectDB = require("./config/db")
 const app = express()
 
